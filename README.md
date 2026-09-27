@@ -51,9 +51,10 @@
 
 | Файл | Назначение |
 | --- | --- |
-| [mdview(portable).zip](https://github.com/Yogiru/mdview/raw/main/mdview(portable).zip) | Портативная версия — распакуй и запусти `mdview.exe` |
-| [MDView(setup).exe](https://github.com/Yogiru/mdview/raw/main/MDView(setup).exe) | Установщик с ассоциацией `.md` и ярлыком на рабочий стол |
-| [MD View (For TotalCommader).exe](https://github.com/Yogiru/mdview/raw/main/MD%20View%20(For%20TotalCommader).exe) | Дополнительная сборка для Total Commander |
+| [mdview-portable-1.1.zip](https://github.com/Yogiru/mdview/raw/main/mdview-portable-1.1.zip) | Портативная версия 1.1 — распакуй и запусти `mdview.exe` |
+| [mdview.exe](https://github.com/Yogiru/mdview/raw/main/mdview.exe) | Сам исполняемый файл (≈1 МБ) |
+| [PRESENTATION.md](https://github.com/Yogiru/mdview/blob/main/PRESENTATION.md) | Презентация возможностей (открывается самим MdView) |
+| [RELEASE_NOTES.md](https://github.com/Yogiru/mdview/blob/main/RELEASE_NOTES.md) | Список изменений версии 1.1 |
 
 ---
 
@@ -100,23 +101,17 @@
 
 ### Портативная версия
 
-1. Скачайте [mdview(portable).zip](https://github.com/Yogiru/mdview/raw/main/mdview(portable).zip).
+1. Скачайте [mdview-portable-1.1.zip](https://github.com/Yogiru/mdview/raw/main/mdview-portable-1.1.zip).
 2. Распакуйте в любую папку.
 3. Запустите `mdview.exe`.
 
 Все настройки и список недавних файлов сохраняются рядом с `mdview.exe`.
 
-### Установщик
+### Ассоциации файлов
 
-1. Скачайте [MDView(setup).exe](https://github.com/Yogiru/mdview/raw/main/MDView(setup).exe).
-2. Запустите его.
-3. Программа установится в профиль текущего пользователя, **прав администратора не требуются**.
-
-Отличия от портативной версии:
-
-1. Установка в профиль пользователя.
-2. Ассоциация файлов `.md` и `.markdown` (можно отменить через меню программы).
-3. Ярлык на рабочий стол.
+Установщик больше не нужен: ассоциации настраиваются прямо в программе —
+меню `...` → **File associations…** (см. раздел [Ассоциация файлов](#ассоциация-файлов)).
+Всё записывается в `HKEY_CURRENT_USER`, прав администратора не требуется.
 
 ---
 
