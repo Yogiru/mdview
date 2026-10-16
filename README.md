@@ -1,7 +1,3 @@
-<img width="1100" height="750" alt="image" src="https://github.com/user-attachments/assets/a1ca3b30-edfb-4dc6-8125-078719ecced6" />
-<img width="1100" height="750" alt="image" src="https://github.com/user-attachments/assets/cd53cdca-309e-4265-8bd6-40a3197c7e9b" />
-
-
 <h1 align="center">MdView</h1>
 
 <p align="center">
@@ -13,7 +9,7 @@
     <img src="https://img.shields.io/badge/Windows-XP%20%7C%207%20%7C%208.1%20%7C%2010%20%7C%2011-blue" alt="Windows" />
   </a>
   <a href="https://github.com/Yogiru/mdview/blob/main/LICENSE">
-    <img src="https://img.shields.io/badge/license-GPL--3.0-green" alt="License" />
+    <img src="https://img.shields.io/badge/license-MIT-green" alt="License" />
   </a>
 </p>
 
@@ -49,16 +45,14 @@
 
 ## Скачать
 
-Последние версии рекомендуется брать из [Releases](https://github.com/Yogiru/mdview/releases).
-
-Также файлы доступны в корне репозитория:
+Актуальный релиз — **[mdview.exe](https://github.com/Yogiru/mdview/blob/main/mdview.exe)** в корне репозитория.
 
 | Файл | Назначение |
 | --- | --- |
-| [mdview-portable-1.1.zip](https://github.com/Yogiru/mdview/raw/main/mdview-portable-1.1.zip) | Портативная версия 1.1 — распакуй и запусти `mdview.exe` |
-| [mdview.exe](https://github.com/Yogiru/mdview/raw/main/mdview.exe) | Сам исполняемый файл (≈1 МБ) |
+| [mdview.exe](https://github.com/Yogiru/mdview/blob/main/mdview.exe) | **Релиз** — исполняемый файл (≈1 МБ), просто скачай и запусти |
+| [mdview-portable-1.2.zip](https://github.com/Yogiru/mdview/raw/main/mdview-portable-1.2.zip) | Портативный пакет 1.2 — exe + документация |
 | [PRESENTATION.md](https://github.com/Yogiru/mdview/blob/main/PRESENTATION.md) | Презентация возможностей (открывается самим MdView) |
-| [RELEASE_NOTES.md](https://github.com/Yogiru/mdview/blob/main/RELEASE_NOTES.md) | Список изменений версии 1.1 |
+| [RELEASE_NOTES.md](https://github.com/Yogiru/mdview/blob/main/RELEASE_NOTES.md) | Список изменений версии 1.2 |
 
 ---
 
@@ -70,14 +64,15 @@
 | SVG | `.svg` | векторная графика, рендерится движком Pixie |
 | FictionBook | `.fb2`, `.fbz`, `.fb2z`, `.zfb2` | электронные книги, картинки из `<binary>` |
 | CHM | `.chm` | Compiled HTML Help, оглавление переходит в панель Outline |
+| PDF | `.pdf` | **опционально** — требуется `pdfium.dll` рядом с `mdview.exe` (BSD, ~6.6 МБ) |
 
-Всё открывается одним исполняемым файлом — **никаких внешних библиотек и кодеков**.
+Markdown, SVG, FB2 и CHM открываются одним исполняемым файлом — **никаких внешних библиотек и кодеков**. PDF работает, если положить рядом `pdfium.dll` (без неё программа полностью функциональна, `.pdf` просто покажет вежливое сообщение).
 
 ---
 
 ## Возможности
 
-- Открывает файлы `.md`, `.markdown`, `.mdown`, `.mdwn`, `.mkd`, `.txt`, `.svg`, `.fb2`, `.fbz`, `.fb2z`, `.zfb2` и `.chm`.
+- Открывает файлы `.md`, `.markdown`, `.mdown`, `.mdwn`, `.mkd`, `.txt`, `.svg`, `.fb2`, `.fbz`, `.fb2z`, `.zfb2` и `.chm` (+ `.pdf` при наличии `pdfium.dll`).
 - Автоматически перезагружает файл при изменении на диске.
 - Показывает оглавление по заголовкам `H1..H6` (для CHM — по дереву документации).
 - Переключается между светлой и тёмной темой.
@@ -105,7 +100,7 @@
 
 ### Портативная версия
 
-1. Скачайте [mdview-portable-1.1.zip](https://github.com/Yogiru/mdview/raw/main/mdview-portable-1.1.zip).
+1. Скачайте [mdview-portable-1.2.zip](https://github.com/Yogiru/mdview/raw/main/mdview-portable-1.2.zip).
 2. Распакуйте в любую папку.
 3. Запустите `mdview.exe`.
 
@@ -337,4 +332,4 @@ MdView использует движок Pixie (рендер Markdown/HTML/SVG �
 **MdView by FreeTm**  
 Контакт: [freetm@my.com](mailto:freetm@my.com)
 
-Распространяется под лицензией [GPL-3.0](LICENSE).
+Распространяется под лицензией [MIT](LICENSE).
